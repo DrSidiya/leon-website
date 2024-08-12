@@ -1,0 +1,143 @@
+/* Start Global variables */
+:root{
+  --main-color:#10cab7;
+}
+/* Start Global variables */
+
+/* Start Global rols */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+body{
+  font-family: "Work Sans", sans-serif;
+}
+.container {
+  padding-inline: 15px;
+  margin-inline: auto;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .container {
+    width: 1320px;
+  }
+}
+/* End Global rols */
+/* Start Header */
+.header {
+  min-height: 80px;
+  padding: 20px;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .logo {
+  width: 60px;
+}
+.header .links {
+  position: relative;
+}
+.header .links i {
+  font-size: 35px;
+}
+.header .links ul {
+  display: none;
+  min-width: 200px;
+  position: absolute;
+  right: 0px;
+  top: calc(100% + 15px);
+  background-color: #eee;
+  z-index: 6;
+}
+.header .links ul::before {
+  content: "";
+  border: 15px solid transparent;
+  border-bottom-color: #eee;
+  position: absolute;
+  right: 3.1px;
+  top: -28.8px;
+}
+.header .links:hover ul {
+  display: block;
+}
+.header .links ul li a {
+  color: #333;
+  padding: 15px;
+  transition: 0.3s;
+}
+.header .links ul li a:hover {
+  padding-left: 20px;
+}
+.header .links ul li:not(:last-of-type) a {
+  border-bottom: 2px solid #ddd;
+}
+/* End Header */
+/* Start landing */
+.landing {
+  background: url(../assets/imgs/landing-page.jpg);
+  background-size: cover;
+  height: calc(100vh - 80px);
+  position: relative;
+  text-align: center;
+}
+.landing .intero-text{
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  width: 320px;
+  max-width: 100%;
+}
+.landing .intero-text h1{
+  color: var(--main-color);
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0;
+}
+.landing .intero-text p{
+  font-size: 19px;
+  line-height: 1.8;
+}
+/* End landing */
