@@ -276,6 +276,9 @@ body {
   gap: 10px;
   background-color: #f6f6f6;
 }
+.portfolio .container .projects .card img{
+  max-width: 100%;
+}
 .portfolio .container .btn{
   display: flex;
   justify-content: center;
